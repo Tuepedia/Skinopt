@@ -2,20 +2,37 @@
 .skin-chameleon #firstHeading,
 .skin-chameleon h1,
 .skin-chameleon h2,
+.skin-chameleon h3,
 .skin-chameleon body,
-.skin-chameleon p {
-	font-family: 'Fira Sans' !important;
-  }
+.skin-chameleon ul,
+.skin-chameleon ol,
+.skin-chameleon dl,
+.skin-chameleon p,
+.skin-chameleon td,
+.skin-chameleon th {
+    font-family: 'Fira Sans' !important;
+    font-weight: 300;
+}
+
+.skin-chameleon dt {
+    font-weight: 400;
+}
 
 .skin-chameleon #bodyContent {
     padding: 0 30px;
 }
 
-.skin-chameleon #bodyContent p {
-	text-align: justify;
+.skin-chameleon #bodyContent p,
+.skin-chameleon #bodyContent ul,
+.skin-chameleon #bodyContent ol,
+.skin-chameleon #bodyContent dl {
 	hyphens: auto;
     font-size: 16px !important;
     line-height: 1.5;
+}
+
+.skin-chameleon #bodyContent p {
+    text-align: justify;
 }
 
 .skin-chameleon #content {
@@ -31,7 +48,7 @@ body.skin-chameleon {
     font-size: 16px;
     text-align: left;
     font-weight: 500;
-    color: #333;
+    color: #555;
     padding: 16px 0 0 0;
     font-family: 'Fira Sans'
 }
@@ -40,18 +57,29 @@ body.skin-chameleon {
 	padding: 18px 28px 0 28px;
 }
 
-#content:after {
+.skin-chameleon #content:after {
     content: "";
     display: block;
     clear: both;
 }
 
-.thumb.tright {
+.skin-chameleon .thumb.tright {
     margin-left: 32px;
 }
 
-.thumbinner {
+.skin-chameleon .thumbinner {
     border-radius: 0;
     padding: 16px;
     margin: 0;
+}
+
+.skin-chameleon .gallerytext p {
+    text-align: left !important;
+    line-height: 1.0 !important;
+    margin: 0 !important;
+    padding-bottom: 1px;
+}
+
+.skin-chameleon .gallery {
+    text-align: left !important;
 }
