@@ -28,14 +28,30 @@ body.skin-chameleon {
 }
 
 .skin-chameleon .mw-content-ltr .thumbcaption {
+    font-size: 16px;
     text-align: left;
-    font-style: italic;
     font-weight: 500;
     color: #333;
-    padding-left: 8px;
-    padding-bottom: 0;
+    padding: 16px 0 0 0;
+    font-family: 'Fira Sans'
 }
 
 .skin-chameleon .contentHeader {
 	padding: 18px 28px 0 28px;
+}
+
+#content:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.thumb.tright {
+    margin-left: 32px;
+}
+
+.thumbinner {
+    border-radius: 0;
+    padding: 16px;
+    margin: 0;
 }
