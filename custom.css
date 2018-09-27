@@ -65,12 +65,14 @@ body.skin-chameleon {
 
 .skin-chameleon .thumb.tright {
     margin-left: 32px;
+    max-width: 100%;
 }
 
 .skin-chameleon .thumbinner {
     border-radius: 0;
     padding: 16px;
     margin: 0;
+    max-width: 100%;
 }
 
 .skin-chameleon .gallerytext p {
@@ -82,4 +84,14 @@ body.skin-chameleon {
 
 .skin-chameleon .gallery {
     text-align: left !important;
+}
+
+@media all and (max-width: 768px) {
+    .skin-chameleon > .container {
+        padding: 0;
+    }
+
+    .skin-chameleon #bodyContent {
+        padding: 0;
+    }
 }
