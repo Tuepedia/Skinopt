@@ -86,6 +86,11 @@ body.skin-chameleon {
     text-align: left !important;
 }
 
+.skin-chameleon .catlinks {
+    padding: 30px 0 40px 30px;
+    border-top: 1px solid #eeeeee;
+}
+
 @media all and (max-width: 768px) {
     .skin-chameleon > .container {
         padding: 0;
