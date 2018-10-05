@@ -91,6 +91,10 @@ body.skin-chameleon {
     border-top: 1px solid #eeeeee;
 }
 
+.skin-chameleon.ns-talk #bodyContent {
+    padding-bottom: 32px;
+}
+
 @media all and (max-width: 768px) {
     .skin-chameleon > .container {
         padding: 0;
