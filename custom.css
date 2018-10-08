@@ -95,6 +95,10 @@ body.skin-chameleon {
     padding-bottom: 32px;
 }
 
+.skin-chameleon. #bodyContent {
+    padding-bottom: 32px;
+}
+
 @media all and (max-width: 768px) {
     .skin-chameleon > .container {
         padding: 0;
