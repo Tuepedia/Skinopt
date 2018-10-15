@@ -95,8 +95,40 @@ body.skin-chameleon {
     padding-bottom: 32px;
 }
 
-.skin-chameleon. #bodyContent {
-    padding-bottom: 32px;
+.template-block-wrapper {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 1px 2px #ccc;
+    padding: 24px 32px;
+    display: inline-block;
+    vertical-align: top;
+
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 16px;
+}
+
+.column-wrapper {
+    column-count: 2;
+    column-gap: 16px;
+}
+
+.column-wrapper > p { /* remove empty lines at end of blocks */
+    display: none;
+}
+
+.template-block-content p:last-child {
+    display: none;
+}
+
+.template-block-wrapper  h1 {
+    margin: 0 0 16px 0;
+    font-size: 30px;
+}
+
+.banner {
+    width: 100%;
 }
 
 @media all and (max-width: 768px) {
@@ -106,5 +138,17 @@ body.skin-chameleon {
 
     .skin-chameleon #bodyContent {
         padding: 0;
+    }
+
+    .skin-chameleon .navbar-default {
+        margin-bottom: 0;
+    }
+
+    .skin-chameleon #firstHeading, .skin-chameleon #content {
+        margin-top: 0;
+    }
+
+    .column-wrapper {
+        column-count: 1;
     }
 }
