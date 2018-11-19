@@ -9,8 +9,10 @@
 .skin-chameleon dl,
 .skin-chameleon p,
 .skin-chameleon td,
-.skin-chameleon th {
+.skin-chameleon th,
+.skin-chameleon .thumbcaption {
     font-family: 'Fira Sans' !important;
+    font-display: auto;
     font-weight: 300;
 }
 
@@ -44,13 +46,12 @@ body.skin-chameleon {
     background-color: #eee;
 }
 
-.skin-chameleon .mw-content-ltr .thumbcaption {
+.skin-chameleon .mw-content-ltr .thumbcaption, .skin-chameleon .mapillary .thumbcaption {
     font-size: 16px;
     text-align: left;
-    font-weight: 500;
+    font-weight: 500 !important;
     color: #555;
     padding: 16px 0 0 0;
-    font-family: 'Fira Sans'
 }
 
 .skin-chameleon .contentHeader {
@@ -95,6 +96,46 @@ body.skin-chameleon {
     padding-bottom: 32px;
 }
 
+.template-block-wrapper {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 1px 2px #ccc;
+    padding: 24px 32px;
+    display: inline-block;
+    vertical-align: top;
+
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 16px;
+}
+
+.column-wrapper {
+    column-count: 2;
+    column-gap: 16px;
+}
+
+.column-wrapper > p { /* remove empty lines at end of blocks */
+    display: none;
+}
+
+.template-block-content p:last-child {
+    display: none;
+}
+
+.template-block-wrapper  h1 {
+    margin: 0 0 16px 0;
+    font-size: 30px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.skin-chameleon .navbar-nav  .dropdown-toggle {
+    font-weight: 500;
+}
+
 @media all and (max-width: 768px) {
     .skin-chameleon > .container {
         padding: 0;
@@ -103,4 +144,48 @@ body.skin-chameleon {
     .skin-chameleon #bodyContent {
         padding: 0;
     }
+
+    .skin-chameleon .navbar-default {
+        margin-bottom: 0;
+    }
+
+    .skin-chameleon #firstHeading, .skin-chameleon #content {
+        margin-top: 0;
+    }
+
+    .column-wrapper {
+        column-count: 1;
+    }
+
+    .skin-chameleon .row {
+        margin: 0;
+    }
+
+    .skin-chameleon .col-lg-12 {
+        padding: 0;
+    }
+
+    .skin-chameleon .navbar-nav {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.skin-vector #mw-content-text {
+    margin-left: 150px;
+}
+
+.skin-vector .template-block-wrapper {
+    box-sizing: border-box;
+}
+
+.skin-vector #p-logo .mw-wiki-logo {
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+}
+
+.skin-vector #p-logo {
+    width: 70px;
+    height: 100px;
 }
